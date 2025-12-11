@@ -147,7 +147,6 @@ p {
 #header .hamburger {
 	height: 60px;
 	width: 60px;
-	display: inline-block;
 	border: 3px solid white;
 	border-radius: 50%;
 	position: relative;
@@ -157,7 +156,6 @@ p {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -173,7 +171,6 @@ p {
 	width: 30px;
 	position: relative;
 	background-color: white;
-	z-index: -1;
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
