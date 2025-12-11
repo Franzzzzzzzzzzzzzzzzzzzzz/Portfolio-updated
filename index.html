@@ -200,12 +200,28 @@
         <h1><span>P</span>rince <span>C</span>orasa</h1>
       </div>
       <h2>My Portfolio</h2>
-      
-      
+    </div>
   </section>
-  
- 
-</body>
 
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list ul');
+    const navLinks = document.querySelectorAll('.nav-list ul li a');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navList.classList.remove('active');
+      });
+    });
+  </script>
+</body>
 
 </html>
